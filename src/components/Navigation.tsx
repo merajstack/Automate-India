@@ -2,7 +2,12 @@ import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
-const Navigation = () => {
+interface NavigationProps {
+  expandedSections: Set<string>;
+  toggleSection: (sectionId: string) => void;
+}
+
+const Navigation = ({ expandedSections, toggleSection }: NavigationProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
 
@@ -13,9 +18,14 @@ const Navigation = () => {
   ];
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+    if (sectionId === 'home') {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // Toggle section visibility for slides and workflow
+      toggleSection(sectionId);
     }
     setIsOpen(false);
   };
@@ -59,12 +69,17 @@ const Navigation = () => {
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
                 className={`px-4 py-2 rounded-lg transition-all duration-300 ${
-                  activeSection === item.id
+                  activeSection === item.id || (item.id !== 'home' && expandedSections.has(item.id))
                     ? 'bg-primary text-primary-foreground shadow-soft'
                     : 'text-foreground hover:bg-secondary hover:text-secondary-foreground'
                 }`}
               >
                 {item.label}
+                {item.id !== 'home' && (
+                  <span className="ml-2 text-xs">
+                    {expandedSections.has(item.id) ? '−' : '+'}
+                  </span>
+                )}
               </button>
             ))}
           </div>
@@ -89,12 +104,17 @@ const Navigation = () => {
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
                   className={`block w-full text-left px-4 py-3 rounded-lg transition-all duration-300 ${
-                    activeSection === item.id
+                    activeSection === item.id || (item.id !== 'home' && expandedSections.has(item.id))
                       ? 'bg-primary text-primary-foreground'
                       : 'text-foreground hover:bg-secondary'
                   }`}
                 >
                   {item.label}
+                  {item.id !== 'home' && (
+                    <span className="ml-2 text-xs">
+                      {expandedSections.has(item.id) ? '−' : '+'}
+                    </span>
+                  )}
                 </button>
               ))}
             </div>

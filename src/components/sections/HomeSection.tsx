@@ -31,19 +31,19 @@ const HomeSection = () => {
             </div>
           </div>
 
-          {/* Video Frame */}
-          <div className="relative">
-            <Card className="card-elevated p-8 bg-gradient-soft">
-              <div className="aspect-video bg-muted rounded-lg flex items-center justify-center relative overflow-hidden">
+          {/* Video Frame - Larger Size */}
+          <div className="relative lg:col-span-1">
+            <Card className="card-elevated p-6 bg-gradient-soft">
+              <div className="aspect-video bg-muted rounded-lg flex items-center justify-center relative overflow-hidden min-h-[300px] md:min-h-[400px]">
                 {/* Video placeholder */}
                 <div className="absolute inset-0 bg-gradient-to-br from-peach-light to-peach opacity-10"></div>
                 <div className="relative z-10 text-center space-y-4">
-                  <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto shadow-medium">
-                    <Play className="w-6 h-6 text-primary-foreground ml-1" fill="currentColor" />
+                  <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto shadow-medium">
+                    <Play className="w-8 h-8 text-primary-foreground ml-1" fill="currentColor" />
                   </div>
-                  <div className="space-y-2">
-                    <h3 className="text-lg font-semibold">Navigation Video</h3>
-                    <p className="text-sm text-muted-foreground">
+                  <div className="space-y-3">
+                    <h3 className="text-xl font-semibold">Navigation Video</h3>
+                    <p className="text-base text-muted-foreground">
                       Video content will be added here
                     </p>
                   </div>
@@ -62,9 +62,9 @@ const HomeSection = () => {
                 */}
               </div>
               
-              <div className="mt-6 space-y-2">
-                <h3 className="text-xl font-semibold">Introduction & Navigation</h3>
-                <p className="text-muted-foreground">
+              <div className="mt-8 space-y-3">
+                <h3 className="text-2xl font-semibold">Introduction & Navigation</h3>
+                <p className="text-muted-foreground text-lg">
                   Get acquainted with my work and learn how to navigate through 
                   the different sections of this portfolio.
                 </p>
