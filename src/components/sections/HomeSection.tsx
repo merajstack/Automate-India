@@ -35,7 +35,7 @@ const HomeSection = () => {
           {/* Video Frame - Responsive for All Screen Sizes */}
           <div className="relative order-1 xl:order-2 animate-scale-in">
             <Card className="card-elevated p-4 sm:p-6 lg:p-8 xl:p-10 bg-gradient-soft hover-scale transition-all duration-300">
-              <div className="aspect-video bg-muted rounded-lg relative overflow-hidden min-h-[250px] sm:min-h-[300px] md:min-h-[350px] lg:min-h-[400px] xl:min-h-[450px] 2xl:min-h-[500px]">
+              <div className="aspect-video bg-muted rounded-lg relative overflow-hidden w-full">
                 <video 
                   className="w-full h-full object-cover rounded-lg"
                   controls
@@ -69,7 +69,7 @@ const HomeSection = () => {
                   Retail Automation
                 </Button>
                 <Button 
-                  variant="outline" 
+                  variant="default" 
                   size="lg"
                   className="flex-1 sm:flex-none px-6 py-3 lg:px-8 lg:py-4 xl:px-10 xl:py-5 text-base sm:text-lg lg:text-xl xl:text-2xl font-medium hover-scale transition-all duration-300"
                 >
