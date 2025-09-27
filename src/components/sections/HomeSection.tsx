@@ -1,5 +1,6 @@
 import { Play } from 'lucide-react';
 import { Card } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
 
 const HomeSection = () => {
   return (
@@ -34,32 +35,15 @@ const HomeSection = () => {
           {/* Video Frame - Mobile First, Larger Size */}
           <div className="relative order-1 lg:order-2">
             <Card className="card-elevated p-4 sm:p-6 bg-gradient-soft">
-              <div className="aspect-video bg-muted rounded-lg flex items-center justify-center relative overflow-hidden min-h-[250px] sm:min-h-[300px] md:min-h-[350px] lg:min-h-[400px]">
-                {/* Video placeholder */}
-                <div className="absolute inset-0 bg-gradient-to-br from-peach-light to-peach opacity-10"></div>
-                <div className="relative z-10 text-center space-y-3 sm:space-y-4 px-4">
-                  <div className="w-16 h-16 sm:w-20 sm:h-20 bg-primary rounded-full flex items-center justify-center mx-auto shadow-medium">
-                    <Play className="w-6 h-6 sm:w-8 sm:h-8 text-primary-foreground ml-1" fill="currentColor" />
-                  </div>
-                  <div className="space-y-2 sm:space-y-3">
-                    <h3 className="text-lg sm:text-xl font-semibold">Navigation Video</h3>
-                    <p className="text-sm sm:text-base text-muted-foreground">
-                      Video content will be added here
-                    </p>
-                  </div>
-                </div>
-                
-                {/* Commented video element for later use */}
-                {/*
+              <div className="aspect-video bg-muted rounded-lg relative overflow-hidden min-h-[250px] sm:min-h-[300px] md:min-h-[350px] lg:min-h-[400px]">
                 <video 
                   className="w-full h-full object-cover rounded-lg"
                   controls
-                  poster="/path-to-poster-image.jpg"
+                  preload="metadata"
                 >
-                  <source src="your-video-url.mp4" type="video/mp4" />
+                  <source src="/videos/navigation-demo.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
-                */}
               </div>
               
               <div className="mt-6 sm:mt-8 space-y-2 sm:space-y-3">
@@ -70,6 +54,29 @@ const HomeSection = () => {
                 </p>
               </div>
             </Card>
+            
+            {/* Automation Examples Section */}
+            <div className="mt-8 sm:mt-12">
+              <h3 className="text-xl sm:text-2xl font-semibold text-center mb-6 sm:mb-8">
+                Automation Models
+              </h3>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center">
+                <Button 
+                  variant="default" 
+                  size="lg"
+                  className="flex-1 sm:flex-none px-6 py-3 text-base sm:text-lg font-medium"
+                >
+                  Retail Automation
+                </Button>
+                <Button 
+                  variant="outline" 
+                  size="lg"
+                  className="flex-1 sm:flex-none px-6 py-3 text-base sm:text-lg font-medium"
+                >
+                  Fitness Automation
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
