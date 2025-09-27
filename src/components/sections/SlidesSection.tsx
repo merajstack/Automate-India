@@ -6,25 +6,25 @@ const SlidesSection = () => {
   return (
     <section id="slides" className="section-padding bg-gradient-soft">
       <div className="container-custom">
-        <div className="text-center space-y-6 mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
+        <div className="text-center space-y-4 sm:space-y-6 mb-12 sm:mb-16 px-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
             Presentation <span className="gradient-text">Slides</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             My presentation slides showcasing key insights and methodologies.
           </p>
         </div>
 
-        <div className="max-w-2xl mx-auto">
-          <Card className="card-elevated p-8 space-y-6">
+        <div className="max-w-4xl mx-auto px-4">
+          <Card className="card-elevated p-4 sm:p-6 lg:p-8 space-y-4 sm:space-y-6">
             {/* Slide Thumbnail Placeholder */}
             <div className="aspect-video bg-gradient-to-br from-peach-light to-cream rounded-lg flex items-center justify-center relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-primary/10"></div>
-              <div className="relative z-10 text-center space-y-3">
-                <FileText className="w-16 h-16 text-primary mx-auto" />
+              <div className="relative z-10 text-center space-y-2 sm:space-y-3 px-4">
+                <FileText className="w-12 h-12 sm:w-16 sm:h-16 text-primary mx-auto" />
                 <div className="space-y-1">
-                  <p className="text-lg font-medium">Presentation Slides</p>
-                  <p className="text-sm text-muted-foreground">Ready for your content</p>
+                  <p className="text-base sm:text-lg font-medium">Presentation Slides</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground">Ready for your content</p>
                 </div>
               </div>
             </div>
@@ -51,20 +51,20 @@ const SlidesSection = () => {
             */}
 
             {/* Slide Information */}
-            <div className="space-y-4 text-center">
+            <div className="space-y-3 sm:space-y-4 text-center">
               <div className="space-y-2">
-                <h3 className="text-2xl font-semibold">Your Presentation Title</h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <h3 className="text-xl sm:text-2xl font-semibold">Your Presentation Title</h3>
+                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                   Brief description of your presentation content and key topics covered.
                 </p>
               </div>
 
-              <div className="flex gap-3 justify-center">
-                <Button variant="default" size="lg">
+              <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                <Button variant="default" size="lg" className="w-full sm:w-auto">
                   <Eye className="w-4 h-4 mr-2" />
                   View Slides
                 </Button>
-                <Button variant="outline" size="lg">
+                <Button variant="outline" size="lg" className="w-full sm:w-auto">
                   <Download className="w-4 h-4 mr-2" />
                   Download
                 </Button>
