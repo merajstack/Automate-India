@@ -10,7 +10,7 @@ const Index = () => {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-warm-white/95 backdrop-blur-sm border-b border-border">
         <div className="container-custom">
           <div className="flex items-center justify-center h-14 sm:h-16 px-4 sm:px-6">
-            <div className="font-semibold text-lg sm:text-xl gradient-text">
+            <div className="font-semibold text-lg sm:text-xl gradient-text text-center">
               Portfolio
             </div>
           </div>

@@ -64,14 +64,14 @@ const HomeSection = () => {
                 <Button 
                   variant="default" 
                   size="lg"
-                  className="flex-1 sm:flex-none px-6 py-3 lg:px-8 lg:py-4 xl:px-10 xl:py-5 text-base sm:text-lg lg:text-xl xl:text-2xl font-medium hover-scale transition-all duration-300"
+                  className="flex-1 sm:flex-none px-6 py-3 lg:px-8 lg:py-4 xl:px-10 xl:py-5 text-base sm:text-lg lg:text-xl xl:text-2xl font-medium hover-scale transition-all duration-300 border-2 border-primary/20"
                 >
                   Retail Automation
                 </Button>
                 <Button 
                   variant="default" 
                   size="lg"
-                  className="flex-1 sm:flex-none px-6 py-3 lg:px-8 lg:py-4 xl:px-10 xl:py-5 text-base sm:text-lg lg:text-xl xl:text-2xl font-medium hover-scale transition-all duration-300"
+                  className="flex-1 sm:flex-none px-6 py-3 lg:px-8 lg:py-4 xl:px-10 xl:py-5 text-base sm:text-lg lg:text-xl xl:text-2xl font-medium hover-scale transition-all duration-300 border-2 border-primary/20"
                 >
                   Fitness Automation
                 </Button>
