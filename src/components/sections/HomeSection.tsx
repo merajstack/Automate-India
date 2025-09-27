@@ -68,13 +68,15 @@ const HomeSection = () => {
                 >
                   Retail Automation
                 </Button>
+  <a href = "https://docs.google.com/forms/d/e/1FAIpQLSeA_ToXXOYKZkLT_qeAt5N_NW86U0QaaCyQs8U8DlO4DDCYBA/viewform?usp=header"> 
                 <Button 
                   variant="default" 
                   size="lg"
-                  className="flex-1 sm:flex-none px-6 py-3 lg:px-8 lg:py-4 xl:px-10 xl:py-5 text-base sm:text-lg lg:text-xl xl:text-2xl font-medium hover-scale transition-all duration-300 border-2 border-primary/20"
+                  className="flex-1 sm:flex-none px-6 py-3 lg:px-8 lg:py-4 xl:px-10 xl:py-5 text-base sm:text-lg lg:text-xl xl:text-2xl font-medium hover-scale transition-all duration-300 border-2 border-primary/20 "
                 >
                   Fitness Automation
                 </Button>
+                </a>
               </div>
             </div>
           </div>
