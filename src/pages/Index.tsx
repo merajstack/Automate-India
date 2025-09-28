@@ -21,8 +21,8 @@ const Index = () => {
         <Tabs defaultValue="home" className="w-full">
           {/* Tab Navigation */}
           <div className="sticky top-14 sm:top-16 z-40 bg-warm-white/95 backdrop-blur-sm border-b border-border">
-            <div className="container-custom px-3 sm:px-6 py-3 sm:py-4">
-              <TabsList className="w-full max-w-lg mx-auto h-10 sm:h-12 bg-secondary/50 p-1">
+            <div className="flex justify-center items-center py-3 sm:py-4">
+              <TabsList className="max-w-lg h-10 sm:h-12 bg-secondary/50 p-1">
                 <TabsTrigger value="home" className="flex-1 text-xs sm:text-sm font-medium px-2 sm:px-3">
                   Home
                 </TabsTrigger>
