@@ -11,7 +11,7 @@ const Index = () => {
         <div className="container-custom">
           <div className="flex items-center justify-center h-14 sm:h-16 px-4 sm:px-6">
             <div className="font-semibold text-lg sm:text-xl gradient-text text-center">
-              Portfolio
+              Automate India with 3d visualisation
             </div>
           </div>
         </div>
