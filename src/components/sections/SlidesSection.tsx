@@ -60,10 +60,10 @@ const SlidesSection = () => {
               </div>
 
               <div className="flex justify-center">
-                <Button variant="default" size="lg" className="w-full sm:w-auto">
+               <a href = "https://gamma.app/docs/Automation-for-Indian-Business-6c8qjadptkl6o5k?mode=present#card-cwfqhbl1svts02o"> <Button variant="default" size="lg" className="w-full sm:w-auto">
                   <Eye className="w-4 h-4 mr-2" />
                   View Slides
-                </Button>
+                </Button></a>
               </div>
             </div>
           </Card>

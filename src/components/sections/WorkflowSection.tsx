@@ -88,10 +88,6 @@ const WorkflowSection = () => {
                   <ZoomIn className="w-4 h-4" />
                   View Full Size
                 </Button>
-                <Button variant="outline" className="flex items-center gap-2 w-full sm:w-auto">
-                  <Download className="w-4 h-4" />
-                  Download Diagram
-                </Button>
               </div>
             </div>
           </Card>
