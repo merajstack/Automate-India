@@ -10,7 +10,10 @@ const Index = () => {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-warm-white/95 backdrop-blur-sm border-b border-border">
         <div className="container-custom">
           <div className="flex items-center justify-center h-14 sm:h-16 px-4 sm:px-6">
-            <div className="font-semibold text-lg sm:text-xl gradient-text text-center">
+            <div className="font-bold text-lg sm:text-xl gradient-text text-center animate-fade-in hover-scale transform-gpu perspective-1000 hover:rotate-x-12 hover:rotate-y-6 transition-all duration-500 drop-shadow-lg hover:drop-shadow-2xl" style={{
+              textShadow: '0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25)',
+              transform: 'translateZ(0)'
+            }}>
               Automate India with 3d visualisation
             </div>
           </div>
