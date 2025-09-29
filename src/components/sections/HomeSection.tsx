@@ -60,7 +60,7 @@ const HomeSection = () => {
               <h3 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-semibold text-center mb-6 sm:mb-8 lg:mb-10">
                 Automation Models
               </h3>
-              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 lg:gap-8 justify-center border-2 border-black">
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 lg:gap-8 justify-center">
                 <Button 
                   variant="default" 
                   size="lg"
