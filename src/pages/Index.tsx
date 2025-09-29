@@ -11,8 +11,6 @@ const Index = () => {
         <div className="container-custom">
           <div className="flex items-center justify-center h-14 sm:h-16 px-4 sm:px-6">
             <div className="font-bold text-lg sm:text-xl text-orange-500 text-center animate-fade-in hover-scale transform-gpu perspective-1000 hover:rotate-x-12 hover:rotate-y-6 transition-all duration-500 drop-shadow-lg hover:drop-shadow-2xl" style={{
-              textShadow: '0 1px 0 #000, 0 2px 0 #000, 0 3px 0 #000, 0 4px 0 #000, 0 5px 0 #000, 0 6px 1px rgba(0,0,0,.5), 0 0 5px rgba(0,0,0,.3), 0 1px 3px rgba(0,0,0,.5), 0 3px 5px rgba(0,0,0,.4), 0 5px 10px rgba(0,0,0,.35)',
-              WebkitTextStroke: '2px black',
               transform: 'translateZ(0)'
             }}>
               Automate India with 3d visualisation
