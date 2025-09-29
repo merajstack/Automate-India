@@ -83,7 +83,7 @@ const WorkflowSection = () => {
               </div>
 
               {/* Action Buttons */}
-              <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 pt-4">
+              <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 pt-4 justify-center">
                 <Button onClick={handleImageClick} className="flex items-center gap-2 w-full sm:w-auto">
                   <ZoomIn className="w-4 h-4" />
                   View Full Size
