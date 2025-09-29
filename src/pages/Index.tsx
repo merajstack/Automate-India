@@ -13,7 +13,7 @@ const Index = () => {
             <div className="font-bold text-lg sm:text-xl text-orange-500 text-center animate-fade-in hover-scale transform-gpu perspective-1000 hover:rotate-x-12 hover:rotate-y-6 transition-all duration-500 drop-shadow-lg hover:drop-shadow-2xl" style={{
               transform: 'translateZ(0)'
             }}>
-              Automate India with 3d visualisation
+              Automate India
             </div>
           </div>
         </div>
