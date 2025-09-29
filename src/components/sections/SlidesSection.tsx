@@ -1,4 +1,4 @@
-import { FileText, Download, Eye } from 'lucide-react';
+import { FileText, Eye } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 
@@ -59,14 +59,10 @@ const SlidesSection = () => {
                 </p>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <div className="flex justify-center">
                 <Button variant="default" size="lg" className="w-full sm:w-auto">
                   <Eye className="w-4 h-4 mr-2" />
                   View Slides
-                </Button>
-                <Button variant="outline" size="lg" className="w-full sm:w-auto">
-                  <Download className="w-4 h-4 mr-2" />
-                  Download
                 </Button>
               </div>
             </div>
