@@ -16,25 +16,6 @@
 
 
 
-Automate-India/
-    ├── public/              # Static assets (favicon, robots, videos)
-    ├── src/
-    │   ├── assets/          # Images, diagrams
-    │   ├── components/      # Reusable UI components
-    │   │   ├── sections/    # Home, Workflow, Slides
-    │   │   └── ui/          # shadcn/ui based UI components
-    │   ├── hooks/           # Custom React hooks
-    │   ├── lib/             # Utility functions
-    │   ├── pages/           # Page-level components (Index, NotFound)
-    │   ├── App.tsx          # Main App component
-    │   ├── main.tsx         # Entry point
-    │   └── index.css        # Global styles
-    ├── tailwind.config.ts   # Tailwind config
-    ├── vite.config.ts       # Vite config
-    ├── tsconfig.json        # TypeScript config
-    ├── package.json         # Dependencies
-    └── README.md            # Documentation
-
 📖 Example Use Cases
 	•	🏪 A shopkeeper automates billing & inventory
 	•	📊 A startup uses automation to auto-generate reports
