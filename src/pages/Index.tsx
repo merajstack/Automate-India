@@ -1,6 +1,5 @@
 import HomeSection from '@/components/sections/HomeSection';
 import SlidesSection from '@/components/sections/SlidesSection';
-import WorkflowSection from '@/components/sections/WorkflowSection';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
 
 const Index = () => {
@@ -31,9 +30,6 @@ const Index = () => {
                 <TabsTrigger value="slides" className="flex-1 text-xs sm:text-sm font-medium px-2 sm:px-3">
                   Slides
                 </TabsTrigger>
-                <TabsTrigger value="workflow" className="flex-1 text-xs sm:text-sm font-medium px-2 sm:px-3">
-                  Workflow
-                </TabsTrigger>
               </TabsList>
             </div>
           </div>
@@ -47,9 +43,6 @@ const Index = () => {
             <SlidesSection />
           </TabsContent>
           
-          <TabsContent value="workflow" className="mt-0">
-            <WorkflowSection />
-          </TabsContent>
         </Tabs>
       </main>
     </div>
