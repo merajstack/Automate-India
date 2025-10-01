@@ -68,7 +68,7 @@ const HomeSection = () => {
                 >
                   Retail Automation
                 </Button>
-  <a href = "https://docs.google.com/forms/d/e/1FAIpQLSeA_ToXXOYKZkLT_qeAt5N_NW86U0QaaCyQs8U8DlO4DDCYBA/viewform?usp=header"> 
+  <a href = "https://gobal-fitness.vercel.app/"> 
                 <Button 
                   variant="default" 
                   size="lg"
